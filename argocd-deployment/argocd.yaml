@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ArgoCD
+metadata:
+  name: argocd-1
+spec:
+  image: lukaszbielinski/argocd
+  version: v1.6.1
+  redis:
+    image: redislabs/redis
+    version: 6.0.6-36
